@@ -25,9 +25,9 @@
 \newpage
 
 \section{Snapshot Objectives}
-
-\subsection{Snapshot 1}
 \textbf{Objective:} Our main objective is to develop a product that will support the performance of our user's short-term memory.capabilities.\newline
+\subsection{Snapshot 1}
+\textbf{Delegation:} Initial feature to be completed: \textbf{Home Page}\newline
 \textbf{Dependencies:}
 \begin{itemize}
     \item JavaScript
@@ -37,7 +37,6 @@
     \item Firebase
 \end{itemize}
 
-\textbf{Delegation:} Initial feature to be completed: \textbf{Home Page}\newline
 \includegraphics{snapshot1img1.png}\newline
 \includegraphics{snapshot1img2.png}
 \includegraphics{snapshot1img3.png}
@@ -45,7 +44,7 @@
 
 
 \subsection{Snapshot 2}
-\textbf{Objective:} Develop and implement the Search/Filter functionality.\newline Dependencies Added :
+\textbf{Objective:} To create a page that will allow users to create memories that can later be accessed from the DB.\newline Dependencies Added :
 \begin{itemize}
     \item
      TestRail
@@ -56,49 +55,57 @@
 \includegraphics{snapshot2img4.png}
 
 \subsection{Snapshot 3}
-\textbf{Objective:} Complete and refine the Memory Creation Screen. 
+\textbf{Objective:} Complete the More Detail Page. \newline
+\includegraphics{snapshot3img1.png}
+\includegraphics{snapshot3img2.png}
+\includegraphics{snapshot3img3.png}
+
 \subsection{Snapshot 4}
-\textbf{Objective:} Finalize the project.
+\textbf{Objective:} Memory Contact Page\newline
+\includegraphics{snapshot4img1.png}\newline
+\includegraphics{snapshot4img2.png}
+\includegraphics{snapshot4img3.png}
+
 
 \section{Design Breakdown}
 
 \subsection{Home Page}
+\textbf{Purpose:}The home page will provide navigation to other pages and a brief overview of created memories.
+
+\textbf{Features:}
 \begin{itemize}
-    \item \textbf{Purpose:} Serve as the entry point for users. Provide navigation and a brief overview of the application's features.
-    \item \textbf{Features:}
-    \begin{itemize}
-        \item Links to other pages (e.g., Memory Creation, Search/Filter).
-        \item Firebase integration for user authentication.
-    \end{itemize}
+    \item List of all memories created by the user, displayed with details like title and date.
+    \item Intuitive interface to ensure ease of use for users.
+    \item Links to navigate to Memory Creation, More Detail, and Memory Contact pages.
 \end{itemize}
 
-\subsection{Search/Filter Functionality}
+\subsection{Memory Creation Page}
+\textbf{Purpose:}Allows users to create and save new memories with detailed information.
+
+\textbf{Features:}
 \begin{itemize}
-    \item \textbf{Purpose:} Enable users to efficiently search and filter their saved memories.
-    \item \textbf{Features:}
-    \begin{itemize}
-        \item Search bar with dynamic filtering.
-    \end{itemize}
+    \item Form for memory input, including fields like title, description, tags, and categories.
+    \item Firebase integration to store data in a secure backend.
 \end{itemize}
 
-\subsection{Memory Creation Screen}
+\subsection{More Detail Page}
+\textbf{Purpose:} The More Detail Page will show the user all the details of the memory as well as the option to edit the information
+
+\textbf{Features:}
 \begin{itemize}
-    \item \textbf{Purpose:} Provide a platform for users to create and save new memory entries.
-    \item \textbf{Features:}
-    \begin{itemize}
-        \item Form for memory input (title, description, tags, etc.).
-        \item Save button to store data in Firebase.
-    \end{itemize}
+    \item Displays all details of a selected memory.
+    \item Edit button to allow modifications to the memory’s title, description, or other fields.
+    \item Navigation back to the Home Page or other pages after editing.
 \end{itemize}
 
-\subsection{Firebase Integration}
+\subsection{Memory Contact Page}
+\textbf{Purpose:}The Memory Contact Page will show the user all contacts they have saved
+
+\textbf{Features:}
 \begin{itemize}
-    \item \textbf{Purpose:} Serve as the backend service for authentication and data storage.
-    \item \textbf{Features:}
-    \begin{itemize}
-        \item User authentication (login and registration).
-        \item Real-time database for storing user-created memories.
-    \end{itemize}
+     \item Displays all saved contacts relevant to the user’s memories.y.
+    \item Option to add, edit, or delete contact details.
+    \item Links to a detailed contact view for individual contact information.
 \end{itemize}
 
 \section{Development Tools}
