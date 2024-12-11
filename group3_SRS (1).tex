@@ -1,0 +1,175 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\setcounter{secnumdepth}{5}
+% Title Info
+\title{Want2Remember SRS}
+\author{CS3338 Group 3: Joshua Hanscom, Nicholas Montales, Jessie Guijosa, Perla Reyes}
+\date{25 November 2024}
+% Page Layout
+\geometry{a4paper, margin=1in}
+\pagestyle{fancy}
+\fancyhead[R]{Page \thepage}
+\fancyfoot[R]{SRS}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+% Version Description
+\section*{Version Description}
+\begin{tabular}{|c|p{10cm}|c|}
+\hline
+\textbf{Version} & \textbf{Description of Changes} & \textbf{Date} \\ \hline
+1.0 & Initial version of the Software Requirements Specification. & 25 November 2024 \\ \hline
+\end{tabular}
+\newpage
+% Introduction
+
+\section{Introduction}
+\subsection{Purpose}
+The purpose of this document is to lay out the requirments that the Want2Remember app needs in order to function properly. This will be done through giving a thorough explanation of the way the app runs, it's software and purpose of the project.
+
+\subsection{Intended Audience}
+The intended audience of Want2Remember is people who struggle with memory loss, no matter the origin of the issue. The Want2Remember app functions as a daily log that helps save things like passwords, things you need to remember, or appointments. The app should help people who struggle with memory loss to be able to function as independent human beings, who may wish to not have a caregiver at every given moment. 
+
+\subsection{Software Overview}
+\begin{description}
+\item[API:] Application Programming Interface
+\item[CRUD:] Create, Read, Update, and Delete
+\item[GUI:] Graphical User Interface
+\item[HIPAA:] Health Insurance Portability and Accountability Act
+\item[iOS:] Apple’s mobile operating system
+\item[JSON:] JavaScript Object Notation
+\item[JS:] JavaScript
+\item[MacOS:] Apple’s Macintosh operating system
+\item[OS:] Operating System
+\item[PIN:] Personal Identification Number
+\item[RSA Encryption:] public key/private key encryption method
+\end{description}
+
+
+
+
+\section{External Interface Requirements}
+\subsection{User Interface}
+\textbf{Versions:} Free, Premium, Free (Caregiver), Premium (Caregiver). \\
+The free versions allow the user access to most features. The premium user interace allow access to additional features. \\
+\textbf{Functional Requirements}
+\textbf{Functional Requirements}
+% Reset subsubsection counter for consistency
+\setcounter{subsubsection}{0}
+\subsubsection*{Home Screen}
+\addtocounter{subsubsection}{1}
+\paragraph{Display Home Screen:} The user interface shall display the Home Screen when the user first accesses the app.
+\subsubsection*{Consistent Design}
+\addtocounter{subsubsection}{1}
+\paragraph{System Design:} The system shall maintain a consistent look and feel across all pages, ensuring that headings, banners, fonts, and buttons adhere to the same style guide.
+\subsubsection*{Navigation Components}
+\addtocounter{subsubsection}{1}
+\paragraph{Header and Navigation Bar:} Every screen shall include a dynamic header component and a bottom navigation bar.
+\subsubsection*{Bottom Navigation Bar}
+\addtocounter{subsubsection}{1}
+\paragraph{Navigation Bar Features:} The bottom navigation bar shall feature options for Home, Create, Search, and Contacts.
+\subsubsection*{Back Button}
+\addtocounter{subsubsection}{1}
+\paragraph{Back Navigation:} A back button shall be positioned in the top right corner to allow the user to return to the Home Screen.
+\subsubsection*{Home Screen Overview}
+\addtocounter{subsubsection}{1}
+\paragraph{Home Screen Display:} The Home Screen shall serve as the default view, providing a brief summary of all existing memories.
+\subsubsection*{Navigation Options on Home Screen}
+\addtocounter{subsubsection}{1}
+\paragraph{Navigation Layout:} Navigation options for Help, Settings, and Filters shall be located in the top left corner of the Home Screen.
+\subsubsection*{Memory Navigation Bar}
+\addtocounter{subsubsection}{1}
+\paragraph{Memory Navigation:} The Memory navigation bar shall initially display “All Memories,” with additional subcategories accessible through a scrollable list on the left.
+\subsubsection*{Memory Preview}
+\addtocounter{subsubsection}{1}
+\paragraph{Memory Preview Display:} Below the navigation bar, the memory preview shall display the date, title, category, and other relevant details about each memory.
+\subsubsection*{Quick Access to Create Screen}
+\addtocounter{subsubsection}{1}
+\paragraph{Create Screen Button:} A “Create” button located at the bottom right of the screen shall provide quick access to the Create Memory Screen.
+\subsubsection*{Create Screen}
+\addtocounter{subsubsection}{1}
+\paragraph{Template Selection:} The Create Screen shall present a selection of memory templates for the user to choose from.
+\subsubsection*{Memory Tile Design}
+\addtocounter{subsubsection}{1}
+\paragraph{Tile Design and Accessibility:} Memory tiles shall be labeled and color-coded in a way that is accessible to all users.
+\subsubsection*{Memory Tile Interaction}
+\addtocounter{subsubsection}{1}
+\paragraph{Tile Interaction:} Clicking on a memory tile shall take the user to a custom template for that specific memory.
+\subsubsection*{Search Screen}
+\addtocounter{subsubsection}{1}
+\paragraph{Search Functionality:} The Search Screen shall allow users to filter their memory tiles by various criteria.
+\subsubsection*{Search Bar}
+\addtocounter{subsubsection}{1}
+\paragraph{Search Input:} A search bar shall be available for users to input their search queries.
+\subsubsection*{Search Results}
+\addtocounter{subsubsection}{1}
+\paragraph{Search Results Display:} Search results shall appear below the search bar and be scrollable for easier navigation.
+\subsubsection*{Contacts Screen}
+\addtocounter{subsubsection}{1}
+\paragraph{Contacts List:} The Contacts Screen shall display all contacts in a scrollable list.
+\subsubsection*{Add Contact Option}
+\addtocounter{subsubsection}{1}
+\paragraph{Add Contact Button:} An “Add Contact” button shall be positioned in the top right corner of the Contacts Screen.
+\subsubsection*{Contact Search Bar}
+\addtocounter{subsubsection}{1}
+\paragraph{Contact Search:} A search bar shall be included to allow users to quickly find specific contacts.
+\subsubsection*{Contact Quick View}
+\addtocounter{subsubsection}{1}
+\paragraph{Quick Contact Details:} The quick view for each contact shall include their name, quick links to contact them, and associated memories.
+\subsubsection*{View Contact Details}
+\addtocounter{subsubsection}{1}
+\paragraph{View More Details:} Clicking on “View More” shall allow the user to see full details for a specific contact.
+\subsubsection*{Settings Screen}
+\addtocounter{subsubsection}{1}
+\paragraph{Settings Overview:} The Settings Screen shall allow users to adjust various settings and preferences.
+\subsubsection*{Import/Export Memories}
+\addtocounter{subsubsection}{1}
+\paragraph{Memory Import/Export:} The settings options shall include the ability for users to import and export memories in JSON format.
+\subsubsection*{Create and Reset Settings}
+\addtocounter{subsubsection}{1}
+\paragraph{Reset Settings:} The user shall have the option to create and reset settings to default. \\ \\
+\hrule
+\newpage
+\subsection{Software Interfaces}
+Support Web Page’s \\
+\section{Legal and Ethical Considerations}
+\subsection{Data Storage \& Privacy Considerations}
+\paragraph{It is essential to ensure the protection and confidentiality of all stored user data. All user data and files within Secured Memories must be encrypted.}
+\paragraph{User data should only be shared with trusted caregivers as necessary.}
+\paragraph{User data must only be shared with explicit consent from the user.}
+\paragraph{The location of a user should be visible only to the users or caregivers whom the user has specifically chosen to share their location with.}
+\subsection{Other Issues}
+\subsubsection*{Data Security and Privacy}
+\paragraph{It is essential to ensure the protection and confidentiality of all stored user data. All user data and files within Secured Memories must be encrypted.}
+\subsubsection*{Data Sharing}
+\paragraph{User data should only be shared with trusted caregivers as necessary.}
+\paragraph{User data must only be shared with explicit consent from the user.}
+\paragraph{The location of a user should be visible only to the users or caregivers whom the user has specifically chosen to share their location with.}
+\newpage
+\section{Glossary}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Acronym} & \textbf{Definition} \\ \hline
+API & Application Programming Interface \\ \hline
+CRUD & Create, Read, Update, and Delete \\ \hline
+GUI & Graphical User Interface \\ \hline
+HIPAA & Health Insurance Portability and Accountability Act \\ \hline
+iOS & Apple’s mobile operating system \\ \hline
+JSON & JavaScript Object Notation \\ \hline
+JS & JavaScript \\ \hline
+MacOS & Apple’s Macintosh operating system \\ \hline
+OS & Operating System \\ \hline
+PIN & Personal Identification Number \\ \hline
+RSA Encryption & Public key/private key encryption method \\ \hline
+\end{tabular}
+\end{document}
+
+
