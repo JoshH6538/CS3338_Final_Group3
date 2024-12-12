@@ -52,10 +52,12 @@ The Want2Remember app allows users to store and create memories while enabling c
 \subsection{System Components}
 \textbf{Client-Side:} 
 The client side uses React for the web interface and React Native for the mobile app. Tailwind CSS ensures responsive and consistent styling. Key screens include:
-- **Caregivers screen**: Displays caregiver information and access.
-- **Memories screen**: Shows a list of memories and details.
-- **Account screen**: Allows users to manage settings.
-- **Create Memory screen**: Facilitates adding new memory details (e.g., category, date, location).
+\begin{description}
+\item[Caregivers screen:] Displays caregiver information and access.
+\item[Memories Creation Page:] Allows the user to create Memory tiles in order to save information that they could forget. There should also be a longer description that can be attached to every memory tile. The information should also be able to be viewed by clicking the memory tile.
+\item[Contact Memory Creation Page:] Allows the user to create Memory tiles in order to save contact information that they could forget. There should also be a longer description that can be attached to every contact memory tile. The information should also be able to be viewed by clicking the contact memory tile.
+\item[Account screen:] Allows users to manage settings.
+\end{description} details (e.g., category, date, location).
 
 \textbf{Server-Side:} 
 Firebase serves as the backend, providing real-time data storage and synchronization. Firebase Authentication ensures secure user access. React JS components handle interactions with Firebase, ensuring seamless updates.
