@@ -80,35 +80,35 @@ Firebase Authentication ensures secure data access. Real-time updates maintain c
 \section{Detailed System Design}
 \subsection{Home Page}
 \begin{description}
-\item[Responsibilities:] This is the memory landing page. Users will see an overview of all the memories they have created
+\item[4.1.1 Responsibilities:] This is the memory landing page. Users will see an overview of all the memories they have created
 on this application.
-\item[Constraints:] The home screen is responsible for the most navigation and the most detailed user
+\item[4.1.2 Constraints:] The home screen is responsible for the most navigation and the most detailed user
 interface. This is the first impression of the user of the application, so the page must be simple, have
 good flow, and be intuitive to use.
-\item[Composition:] Memories must be created by the user before they can be displayed, filtered, searched, or edited.
+\item[4.1.3 Composition:] Memories must be created by the user before they can be displayed, filtered, searched, or edited.
 \end{description}
 
 \subsection{Memory Creation Page}
 \begin{description}
-\item[Responsibilities:] This page will allow the user to create a new memory.
+\item[4.2.1 Responsibilities:] This page will allow the user to create a new memory.
 on this application.
-\item[Constraints:] The Create Memory button should be easily accessible in the bottom toolbar and on the memory screen.
-\item[Uses:] After clicking the Create Memory button, the user will go to the Create screen, where they will fill out a form consisting of different memories, names, categories, any files to
+\item[4.2.2 Constraints:] The Create Memory button should be easily accessible in the bottom toolbar and on the memory screen.
+\item[4.2.3 Uses:] After clicking the Create Memory button, the user will go to the Create screen, where they will fill out a form consisting of different memories, names, categories, any files to
 attach, statuses, tags, etc.
 \end{description}
 
 \subsection{More Details Page}
 \begin{description}
-\item[Responsibilities:] The More Details Page will show the user all the details of the memory as well as the option to edit the information
-\item[Constraints:] The user will be able to access the More Details Page by simply tapping the memory
-\item[Uses:] The user will be able to see details of a memory such as the date it was created and updated. The user will be also able to edit the memory information by clicking the edit button in the memory More Details Page.
+\item[4.3.1 Responsibilities:] The More Details Page will show the user all the details of the memory as well as the option to edit the information
+\item[4.3.2 Constraints:] The user will be able to access the More Details Page by simply tapping the memory
+\item[4.3.3 Uses:] The user will be able to see details of a memory such as the date it was created and updated. The user will be also able to edit the memory information by clicking the edit button in the memory More Details Page.
 \end{description}
 
 \subsection{Memory Contact page}
 \begin{description}
-\item[Responsibilities:] The Memory Contact Page will show the user all contacts they have saved. The Memory Contact Page will also show the information of contacts the user has saved
-\item[Constraints:] The user will have to save the contacts before they appear on the contacts screen. The contact details will only be available for contacts the user has saved
-\item[Uses:] The user will be able to click on the contacts button in the toolbar and be redirected to the Memory Contact Page and see all their contacts they have saved.
+\item[4.4.1 Responsibilities:] The Memory Contact Page will show the user all contacts they have saved. The Memory Contact Page will also show the information of contacts the user has saved
+\item[4.4.2 Constraints:] The user will have to save the contacts before they appear on the contacts screen. The contact details will only be available for contacts the user has saved
+\item[4.4.3 Uses:] The user will be able to click on the contacts button in the toolbar and be redirected to the Memory Contact Page and see all their contacts they have saved.
 \end{description}
 
 \section{Glossary}
